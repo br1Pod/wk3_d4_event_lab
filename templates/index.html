@@ -9,11 +9,13 @@
 <div>
     <dl>
         {% for event in events %}
+
         <dt>{{ event.title }}</dt>
         <dd>{{ event.description }}</dd>
-        {{ endfor }}
+        
+        {% endfor %}
     </dl>
  
 </div>
 
-{{ endblock }}
+{% endblock %}

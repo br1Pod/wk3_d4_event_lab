@@ -1,0 +1,17 @@
+dl {
+    width:600px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #333;
+    margin: auto;
+}
+
+dt {
+    margin-top: 20px;
+}
+  
+  dd {
+      text-align:center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+  }
