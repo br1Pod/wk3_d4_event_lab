@@ -10,8 +10,9 @@ def index():
 @app.route("/events", methods = ["POST"])
 def add_event():
     event_title = request.form["title"]
-    event_description = request.form["description"]
-    new_event = Event("21th Aug",  event_title, 250, "The Stand", event_description)
+    event_description = request.form["description"] 
+    event_date = request.form["date"]
+    new_event = Event(event_date,  event_title, 250, "The Stand", event_description)
     new_event.add_new_event(events, new_event)
     return render_template("index.html", title="home", events = events)
 
