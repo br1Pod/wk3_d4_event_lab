@@ -2,19 +2,25 @@
 
 {% block content %}
 
-<h1>Events</h1>
+<h2>Events</h2>
 
 
 
 <div>
-    <dl>
+    <ul>
+        <li>
+            
         {% for event in events %}
 
-        <dt>{{ event.title }}</dt>
-        <dd>{{ event.description }}</dd>
-        
+            <ul>
+                <li>{{ event.title }}</li>
+                <li>{{ event.description }}</li>
+            </ul>
+
         {% endfor %}
-    </dl>
+
+        </li>
+    </ul>
  
 </div>
 

@@ -1,4 +1,36 @@
-dl {
+header {
+    background-color: beige;
+    color:#333; 
+    padding:20px;  
+    border-bottom: 2px solid maroon;
+}
+
+#nav {
+    list-style-type :none;
+    text-align:right;
+}
+
+#nav ul li a{
+    padding:10px;
+}
+
+
+
+h1 {
+    font-size:30px;
+    text-align: left;
+}
+
+h2 {
+    font-size:25px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+
+}
+    ul ul {
     width:600px;
     font-size: 30px;
     text-align: center;
@@ -6,12 +38,11 @@ dl {
     margin: auto;
 }
 
-dt {
+ul ul li {
     margin-top: 20px;
 }
   
-  dd {
+ ul ul li {
       text-align:center;
       margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
   }

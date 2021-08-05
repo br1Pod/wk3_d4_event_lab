@@ -7,4 +7,5 @@ class Event:
         self.location = location
         self.description = description
 
-        
+    def add_new_event(self, event_list, event):
+        event_list.append(event)
