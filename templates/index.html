@@ -13,11 +13,11 @@
         {% for event in events %}
 
             <ul>
-                <li class="">{{ event.title }}</li>
-                <li class=""{{ event.date }}</li>
-                <li class="">Venue:  {{ event.location }}</li>
-                <li class="">{{ event.description }}</li>
-                <li class="">Max Capacity: {{ event.capacity }}</li>
+                <li class="ev_title">{{ event.title }}</li>
+                <li class="ev_date">{{ event.date }}</li>
+                <li class="ev_loc">Venue:  {{ event.location }}</li>
+                <li class="ev_desc">{{ event.description }}</li>
+                <li class="ev_capa">Max Capacity: {{ event.capacity }}</li>
             </ul>
 
         {% endfor %}

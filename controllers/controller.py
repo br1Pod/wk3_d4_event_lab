@@ -12,7 +12,9 @@ def add_event():
     event_title = request.form["title"]
     event_description = request.form["description"] 
     event_date = request.form["date"]
-    new_event = Event(event_date,  event_title, 250, "The Stand", event_description)
+    event_location = request.form["location"]
+    event_capacity = request.form["capacity"]
+    new_event = Event(event_date,  event_title, event_capacity, event_location, event_description)
     new_event.add_new_event(events, new_event)
     return render_template("index.html", title="home", events = events)
 
